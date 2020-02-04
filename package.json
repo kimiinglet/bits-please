@@ -1,10 +1,10 @@
 {
-  "name": "1-Passport-Example",
+  "name": "bits-please",
   "version": "1.0.0",
-  "description": "",
+  "description": "quiz application from bits-please",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run eslint",
     "start": "node server.js",
     "watch": "nodemon server.js"
   },
@@ -19,7 +19,8 @@
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "sequelize": "^5.8.6"
+    "sequelize": "^5.8.6",
+    "lint": "eslint --quiet"
   },
   "devDependencies": {
     "eslint": "^6.8.0"
