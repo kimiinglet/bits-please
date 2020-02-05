@@ -10,7 +10,9 @@ var db = {}
 
 if (config.use_env_variable) {
   var sequelize = new Sequelize(process.env[config.use_env_variable])
-  var sequelize = new Sequelize(config.database, config.username, config.password, config)
+
+} else {
+  var sequelize = new Sequelize(config.database, config.username, config.password, config) // eslint-disable-line no-redeclare
 }
 // error above for var sequelize already being declared
 
