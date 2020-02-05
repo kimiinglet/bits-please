@@ -30,6 +30,7 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/highscore.html"));
   });
 
-  app.get("/404")
-
+  app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/404.html"));
+  });
 };
