@@ -8,3 +8,4 @@ CREATE TABLE highscores (
     PRIMARY KEY (id)
 );
 SELECT * FROM highscores;
+
