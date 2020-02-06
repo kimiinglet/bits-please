@@ -1,5 +1,6 @@
 * {
   position: relative;
+  background-color: cadetblue;
 }
 
 #userName {
@@ -15,7 +16,6 @@ quiz Html
   position: absolute;
   left: 0;
   width: 80%;
-  background-color: white;
 }
 
 /* ==========================
@@ -26,8 +26,13 @@ they affect quizhtml only
 .navbar {
   width: auto;
   height: 75px;
-  background-color: rgb(130, 88, 177);
+  float: left;
 
+}
+
+#avatar_img {
+  height: 100px;
+  width: 100px
 }
 
 .card {
@@ -35,6 +40,11 @@ they affect quizhtml only
   margin: 5px;
 
 }
+
+/* .card-content {
+
+
+} */
 
 .question_text_div {
   padding: 15px;

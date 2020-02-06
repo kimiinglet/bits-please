@@ -20,92 +20,110 @@
 
   <nav class="navbar" role="navigation" aria-label="dropdown navigation">
     <!-- avatar_placeholder.png -->
-
-    <a class="navbar-item">
-      <img src="./images/avatar_placeholder.png" width="50" height="50px" alt="avatar">
-    </a>
-
-
     <div class="navbar-item has-dropdown is-hoverable">
       <a class="navbar-link">
         Navigation Menu
       </a>
 
+      <hr class="navbar-divider">
       <div class="navbar-dropdown">
         <a class="navbar-item">
           Homepage
         </a>
+        <hr class="navbar-divider">
         <a class="navbar-item">
           Profile
         </a>
+        <hr class="navbar-divider">
         <a class="navbar-item">
           Highscores
         </a>
         <hr class="navbar-divider">
-        <!-- <div class="navbar-item">
-              
-            </div> -->
+
       </div>
     </div>
   </nav>
 
+  <div class="account_hero">
+    <section class="hero is-small is-primary is-bold">
+      <div class="hero-body">
+        <div class="hero_container">
+          <img src="./images/avatar_placeholder.png" id="avatar_img" width="50" height="50px" alt="avatar">
+          <h1 class="account_hero_name">
+            Username Here!
+          </h1>
+          <h2 class="account_hero_subtitle">
+            Subtitle
+          </h2>
 
+        </div>
+      </div>
+    </section>
+  </div> <!-- // end acct_hero div-->
 
-
-
-  <!-- ----------------------- -->
   <br><br>
 
-  <div class="card">
-    <header class="card-header">
-      <p class="card-header-title">
-        JavaScript Level One - Select the Best Answer
-      </p>
+  <container id="quiz_container">
 
-    </header>
-    <div class="card-content">
-      <div class="content">
-        <div class="quizBox">
+    <div class="card">
+      <header class="card-header">
+        <p class="card-header-title">
+          JavaScript Level One - Select the Best Answer
+        </p>
 
-          <fieldset>
-            <div class="question_text_div">
-              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum consequuntur, mollitia
-                tempora a quos corrupti, praesentium ipsam natus voluptatum consectetur laborum inventore neque
-                reprehenderit asperiores repellat id, dignissimos facilis?</span>
-            </div>
-            <br>
-            <div class="answers_div">
-              <div>
-                <input type="checkbox" class="answer_text" id="option1" name="js" value="1answer">
-                <label for="option1">1.answer</label>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <div class="quizBox">
+
+            <fieldset>
+              <div class="question_text_div">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum consequuntur, mollitia
+                  tempora a quos corrupti, praesentium ipsam natus voluptatum consectetur laborum inventore neque
+                  reprehenderit asperiores repellat id, dignissimos facilis?</span>
               </div>
-              <div>
-                <input type="checkbox" class="answer_text" id="option2" name="js" value="2answer">
-                <label for="option2">2.answer</label>
-              </div>
-              <div>
-                <input type="checkbox" class="answer_text" id="music" name="js" value="3answer">
-                <label for="option3">3.answer</label>
-              </div>
-              <div>
-                <input type="checkbox" class="answer_text" id="music" name="js" value="4answer">
-                <label for="option4">4.answer</label>
-              </div>
+              <br>
+              <div class="answers_div">
+                <div>
+                  <input type="checkbox" class="answer_text" id="option1" name="js" value="1answer">
+                  <label for="option1">1.answer</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="answer_text" id="option2" name="js" value="2answer">
+                  <label for="option2">2.answer</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="answer_text" id="music" name="js" value="3answer">
+                  <label for="option3">3.answer</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="answer_text" id="music" name="js" value="4answer">
+                  <label for="option4">4.answer</label>
+                </div>
 
-            </div> <!-- // end answers div-->
+              </div> <!-- // end answers div-->
 
-          </fieldset>
-        </div> <!-- // end quizbox div -->
-        <br>
-        <!-- <a href="#">link</a> -->
-        <br>
-      </div> <!-- content div -->
+            </fieldset>
+          </div> <!-- // end quizbox div -->
+
+        </div> <!-- content div -->
+        <footer class="card-footer">
+          <a href="#" class="card-footer-item" id="card-footer-submit">Submit</a>
+          <a href="#" class="card-footer-item" id="card-footer-hint">Hint</a>
+          <!-- Hint modal - give 1 that is wrong. pick randomly using math.random.math.floor, index of possible answers with correct identifier of "false" -->
+          <a href="#" class="card-footer-item" id="card-footer-main">Back to Main Menu</a>
+          <!-- Answer modal - give the text of the answer id with the 'correct' value of wrong -->
+        </footer>
+      </div> <!-- end card-content div-->
+    </div> <!-- // end card div -->
 
 
 
 
 
 
+
+  </container> <!-- quiz-container-->
 
 
 
