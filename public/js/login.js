@@ -22,8 +22,9 @@ $(document).ready(function() {
     // If we have an email and password we run the loginUser function and clear the form
     loginUser(!userData.username);
     // (userData.email, userData.password)
-    emailInput.val("");
-    passwordInput.val("");
+    usernameInput.val("")
+    // emailInput.val("");
+    // passwordInput.val("");
   });
 
   // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
