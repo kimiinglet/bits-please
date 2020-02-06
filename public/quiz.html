@@ -3,51 +3,128 @@
 
 <head>
   <title>Quiz Time</title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="stylesheets/style.css" rel="stylesheet">
+
 </head>
 
 <body>
-<<<<<<< HEAD
-<div class="container">
-    <header>Quiz Page</header>
-    <hr>
-    <!-- questions / answers -->
-    <div class="quizBox">
-        <div class="question">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, ducimus laborum rem vitae iusto saepe voluptatibus culpa, consequatur ipsam aliquam error. Architecto asperiores inventore nam iste reiciendis sequi velit impedit.</div>
-        <hr>
-        <div class="answer1">1.answer</div><br>
-        <div class="answer2">2.answer</div><br>
-        <div class="answer3">3.answer</div><br>
-        <div class="answer4">4.answer</div><br>
-    </div>    
-</div>
+
+  <!-- -------------------------------------------------
+  accept all the changes on this page
+  it's html endpoints to support rendering questions and answers
+  tags/classes/ids are referenced in css and rendering qs+as
+  ---------------------------------------------------------->
+
+  <nav class="navbar" role="navigation" aria-label="dropdown navigation">
+    <!-- avatar_placeholder.png -->
+
+    <a class="navbar-item">
+      <img src="./images/avatar_placeholder.png" width="50" height="50px" alt="avatar">
+    </a>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/login.js"></script>
-=======
-  <nav class="navbar navbar-default">
-
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">
+        Navigation Menu
       </a>
+
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Homepage
+        </a>
+        <a class="navbar-item">
+          Profile
+        </a>
+        <a class="navbar-item">
+          Highscores
+        </a>
+        <hr class="navbar-divider">
+        <!-- <div class="navbar-item">
+              
+            </div> -->
+      </div>
     </div>
-  </div>
-</nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
+  </nav>
+
+
+
+
+
+  <!-- ----------------------- -->
+  <br><br>
+
+  <div class="card">
+    <header class="card-header">
+      <p class="card-header-title">
+        JavaScript Level One - Select the Best Answer
+      </p>
+
+    </header>
+    <div class="card-content">
+      <div class="content">
+        <div class="quizBox">
+
+          <fieldset>
+            <div class="question_text_div">
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum consequuntur, mollitia
+                tempora a quos corrupti, praesentium ipsam natus voluptatum consectetur laborum inventore neque
+                reprehenderit asperiores repellat id, dignissimos facilis?</span>
+            </div>
+            <br>
+            <div class="answers_div">
+              <div>
+                <input type="checkbox" class="answer_text" id="option1" name="js" value="1answer">
+                <label for="option1">1.answer</label>
+              </div>
+              <div>
+                <input type="checkbox" class="answer_text" id="option2" name="js" value="2answer">
+                <label for="option2">2.answer</label>
+              </div>
+              <div>
+                <input type="checkbox" class="answer_text" id="music" name="js" value="3answer">
+                <label for="option3">3.answer</label>
+              </div>
+              <div>
+                <input type="checkbox" class="answer_text" id="music" name="js" value="4answer">
+                <label for="option4">4.answer</label>
+              </div>
+
+            </div> <!-- // end answers div-->
+
+          </fieldset>
+        </div> <!-- // end quizbox div -->
+        <br>
+        <!-- <a href="#">link</a> -->
+        <br>
+      </div> <!-- content div -->
     </div>
+    <footer class="card-footer">
+      <a href="#" class="card-footer-item" id="card-footer-submit">Submit</a>
+      <a href="#" class="card-footer-item" id="card-footer-hint">Hint</a>
+      <!-- Hint modal - give 1 that is wrong. pick randomly using math.random.math.floor, index of possible answers with correct identifier of "false" -->
+      <a href="#" class="card-footer-item" id="card-footer-main">Back to Main Menu</a>
+      <!-- Answer modal - give the text of the answer id with the 'correct' value of wrong -->
+    </footer>
   </div>
 
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
->>>>>>> master
 
 </body>
 
