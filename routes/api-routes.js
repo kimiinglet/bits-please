@@ -46,20 +46,22 @@ module.exports = function (app) {
       })
     }
   })
+  app.post("/api/new", function (req, res) {
+
+    console.log("User Data:")
+    console.log(req.body)
+  
+    db.User.create({
+      name: req.body.name,
+      created_at: req.body.created_at
+    }).then(function (results) {
+      // `results` here would be the newly created user
+      console.log(results);
+      res.end()
+    })
+  
+  })
 }
 
 // Add User
-app.post("/api/new", function (req, res) {
 
-  console.log("User Data:")
-  console.log(req.body)
-
-  User.create({
-    name: req.body.name,
-    created_at: req.body.created_at
-  }).then(function (results) {
-    // `results` here would be the newly created user
-    res.end()
-  })
-
-})

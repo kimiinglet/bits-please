@@ -15,8 +15,16 @@ body {
 }
 
 
-#letter {
-  font-size: 40px;
+#bits {
+  font-size: 80px;
+}
+
+#please {
+  font-size: 80px;
+}
+
+#signBtn {
+  background-image: url(../images/buttons.jpeg);
 }
 /* =========================
 quiz Html

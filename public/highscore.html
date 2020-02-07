@@ -13,12 +13,18 @@
   <!-- background -->
   <body id="bgImage" class="container mx-auto bg-repeat" style="background-image:url(https://cdn6.dissolve.com/p/D2115_140_298/D2115_140_298_1200.jpg)">
     
-    <!-- header -->
-    <div class="navBar">  
-      <div class="col-span-6 sm:col-span-4 md:col-span-3 lg:col-span-5 xl:col-span-2 w-screen bg-gray-600 h-10 ">
-        <img class="w-12" src=`https://avatars.dicebear.com/v2/bottts/$` + {user-data} + `.svg` alt="avatar">
-      </div>
-    </div>
+
+    <!-- nav bar -->
+    <ul class="flex justify-between">
+      <li class="mx-3 mb-4">
+        <img class="w-12" src="https://avatars.dicebear.com/v2/bottts/${currentuser}.svg" alt="avatar"></li>
+      <li class="mr-3">
+        <a class="inline-block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white uppercase" href="#">Home page</a>
+      </li>
+      <li class="mr-3">
+        <a class="inline-block py-2 px-4 text-gray-400 cursor-not-allowed" href="#">High Scores</a>
+      </li>
+    </ul>
 
     <!-- userScore / transparent / highScore -->
     <div class="px-2 m-5">
@@ -64,12 +70,6 @@
         </div>
       </div>
     </div>
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/login.js"></script>
-
-  </body>
-
-  </html>
+</div>
+</body>
+</html>
