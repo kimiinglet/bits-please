@@ -24,7 +24,7 @@ id INT NOT NULL
 AUTO_INCREMENT,
 name VARCHAR
 (20) NOT NULL,
--- highest_score INT NULL,
+password VARCHAR (100),
 PRIMARY KEY
 (id)
 );
