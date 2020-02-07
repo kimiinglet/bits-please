@@ -1,15 +1,15 @@
 // =============================================================
 // Dependencies
 // =============================================================
-
-var Sequelize = require("sequelize");
-var sequelize = require("../config/connection.js");
+module.exports = function (sequelize, DataTypes) {
+    var User = sequelize.define("user", {
+        name: Sequelize.STRING,
+        created_at: Sequelize.DATE
+    });
+}
 
 // Creates a "User" model that matches up with DB
-var User = sequelize.define("user", {
-    name: Sequelize.STRING,
-    created_at: Sequelize.DATE
-});
+
 
 // Syncs with DB
 User.sync();
