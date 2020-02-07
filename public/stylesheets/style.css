@@ -1,7 +1,5 @@
-
 * {
-  position: relative;
-  background-color: cadetblue;
+  font-family: 'Permanent Marker', cursive;
 }
 
 #userName {
@@ -9,27 +7,30 @@
 
 }
 
+body {
+  height: 100%;
+  background-size: cover;
+  width: 100%;
+
+}
+
 /* =========================
 quiz Html
 ========================== */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-#container {
+/* #container {
   position: absolute;
   left: 0;
   width: 80%;
-}
->>>>>>> 88327d3f877bea36abbf299f516a3b7d47310ced
+} */
+
 
 /* ==========================
 accept the changes below, xo mags, 
 they affect quizhtml only 
 ===================*/
-=======
->>>>>>> master
+
 
 .navbar {
   width: auto;
