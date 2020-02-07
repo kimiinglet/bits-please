@@ -39,42 +39,40 @@ CREATE TABLE highscores
             (40) NOT NULL
 );
 
-
             CREATE TABLE quizzes
             (
                 id INT NOT NULL
                 AUTO_INCREMENT PRIMARY KEY, 
-  quiz_name VARCHAR
+quiz_code VARCHAR
                 (100) NOT NULL,
-  topic_id INT NULL,
-  FOREIGN KEY
+topic_id INT NULL,
+FOREIGN KEY
                 (topic_id) REFERENCES topics
                 (id)
 );
 
-
-                CREATE TABLE questions
+                CREATE TABLE quiz_content
                 (
                     id INT NOT NULL
                     AUTO_INCREMENT PRIMARY KEY, 
+topic_id INT NULL,
+quiz_code VARCHAR
+                    (100) NOT NULL,
 question_text VARCHAR
-                    (300) NOT NULL,
-quiz_id INT NULL, 
+                    (500) NOT NULL,
+option1 VARCHAR
+                    (500) NOT NULL,
+option2 VARCHAR
+                    (500) NOT NULL,
+option3 VARCHAR
+                    (500) NOT NULL,
+option4 VARCHAR
+                    (500) NOT NULL,
+correct_option VARCHAR
+                    (15) NOT NULL,
 FOREIGN KEY
-                    (quiz_id) REFERENCES quizzes
+                    (topic_id) REFERENCES topics
                     (id)
+
 );
 
-
-                    CREATE TABLE answers
-                    (
-                        id INT NOT NULL
-                        AUTO_INCREMENT PRIMARY KEY, 
-answer_option VARCHAR
-                        (500) NOT NULL,
-correct BOOLEAN NOT NULL, 
-question_id INT NOT NULL,
-FOREIGN KEY
-                        (question_id) REFERENCES questions
-                        (id)
-);

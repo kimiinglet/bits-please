@@ -18,7 +18,7 @@ FROM topics;
 
 
 INSERT INTO quizzes
-  (quiz_name, topic_id)
+  (quiz_code, topic_id)
 VALUES
   ("JavaScript Level 1", 1),
   ("HTML Level 1", 2)
@@ -46,7 +46,7 @@ VALUES
   (1, "JSL01", 'For the following code: \n function calculateArea(width, height){ \n var area = width * innerHeight; \n return area;} \nvar wallOne = calculateArea(3, 5); \n var wallTwo = calculateArea(8, 5); \n\nWhat will var wallOne equal?', '8', '40', '13', '15', "option4"),
 
   -- 5---------
-  (1, "JSL01", 'For the following code: \n function calculateArea(width, height){ \n var area = width * innerHeight; \n return area;} \nvar wallOne = calculateArea(3, 5); \n var wallTwo = calculateArea(8, 5); \n\nWhat will var wallTwo equal?', '8', '40', '13', '15', "option4", "option2"),
+  (1, "JSL01", 'For the following code: \n function calculateArea(width, height){ \n var area = width * innerHeight; \n return area;} \nvar wallOne = calculateArea(3, 5); \n var wallTwo = calculateArea(8, 5); \n\nWhat will var wallTwo equal?', '8', '40', '13', '15', "option2"),
   -- 6---------
   (1, "JSL01", "Which of the following code snippets will run the showGardenSize() function successfully?", 'function showGardenSize(){\nvar width = 3; \nvar height = 2; \nvar area = width * height; \nreturn area}; \nshowGardenSize;', 'function showGardenSize(){\nvar width = 3; \nvar height = 2; \nvar area = return area}; \nshowGardenSize();', 'function showGardenSize(\nvar width = 3; \nvar height = 2; \nvar area = width * height; \nreturn area); \nshowGardenSize();', 'function showGardenSize(){\nvar width = 3; \nvar height = 2; \nvar area = width * height; \nreturn area}; \nshowGardenSize();', "option4"),
 
@@ -103,7 +103,19 @@ VALUES
   (1, "JSL01", "What is the proper syntax for writing a JavaScript array for the variable 'flavors' containing 'vanilla', 'strawberry' and 'lemon'? Use double quotes for strings", 'var flavors = "vanilla", "strawberry", "lemon"', 'class flavors = ["vanilla", "smartphone", "lemon"]', 'var flavors = ["vanilla", "strawberry", "lemon"]', 'variable flavors = "vanilla", "strawberry", "lemon"', "option3"),
 
   -- 25---------
-  (1, "JSL01", "What is the proper syntax for writing a JavaScript array for the variable 'operatingSystem' containing 'Windows', 'Mac', 'Linux'? Use double quotes for strings", 'var operatingSystem = "Windows", "Mac", "Linux"', 'class operatingSystem = ["Windows", "Mac", "Linux"]', 'var operatingSystem = ["Windows", "Mac", "Linux"]', 'variable operatingSystem = "Windows", "Mac", "Linux"', "option3")
+  (1, "JSL01", "What is the proper syntax for writing a JavaScript array for the variable 'operatingSystem' containing 'Windows', 'Mac', 'Linux'? Use double quotes for strings", 'var operatingSystem = "Windows", "Mac", "Linux"', 'class operatingSystem = ["Windows", "Mac", "Linux"]', 'var operatingSystem = ["Windows", "Mac", "Linux"]', 'variable operatingSystem = "Windows", "Mac", "Linux"', "option3"),
+  -- ---------
+  -- ---------
+  -- ---------
+  -- HTML -----------------
+  -- H1--------- 
+  (2, "HTMLL01", "What is the emmet code shortcut for populating an empty HTML file with a basic template of code?", '<html + Tab', '!<html + Tab', '! + Tab', '<html + Shift + Tab', "option3"),
+
+  -- H2---------
+  (2, "HTMLL01", "What is the syntax of a paragraph tag", '<paragraph>', 'new Paragraph (){}', '<br>', '<p>', "option4")
+
+-- H3--------- 
+
 
 ;
 
