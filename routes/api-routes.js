@@ -15,7 +15,7 @@ module.exports = function (app) {
   // otherwise send back an error
   app.post("/api/signup", function (req, res) {
     db.User.create({
-      email: req.body.email,
+      username: req.body.username,
       password: req.body.password
     })
       .then(function () {
@@ -41,9 +41,27 @@ module.exports = function (app) {
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({
-        email: req.user.email,
+        username: req.user.username,
         id: req.user.id
       })
     }
   })
+  app.post("/api/new", function (req, res) {
+
+    console.log("User Data:")
+    console.log(req.body)
+  
+    db.User.create({
+      name: req.body.name,
+      created_at: req.body.created_at
+    }).then(function (results) {
+      // `results` here would be the newly created user
+      console.log(results);
+      res.end()
+    })
+  
+  })
 }
+
+// Add User
+
