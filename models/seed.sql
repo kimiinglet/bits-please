@@ -67,7 +67,19 @@ CREATE TABLE topics
 
 
 
+INSERT INTO highscores (name, score) 
+VALUES 
+ ("CPU1" , 7),
+ ("CPU2" , 6),
+ ("CPU3", 2),
 
+
+-- When you build the functionality, pass this sql call into javascript. (The connection.query)
+ SELECT * FROM highscores LIMIT 10 ORDER BY score DESC;
+
+
+
+-- Everything should be in one set of parenthesis separated by commas
         INSERT INTO topics
           (topic_name)
         VALUES

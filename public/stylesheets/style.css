@@ -1,10 +1,11 @@
 * {
   position: relative;
+  background-color: cadetblue;
 }
 
 #userName {
   width: 25%;
-  
+
 }
 
 /* =========================
@@ -15,6 +16,44 @@ quiz Html
   position: absolute;
   left: 0;
   width: 80%;
-  background-color: white;
 }
 
+/* ==========================
+accept the changes below, xo mags, 
+they affect quizhtml only 
+===================*/
+
+.navbar {
+  width: auto;
+  height: 75px;
+  float: left;
+
+}
+
+#avatar_img {
+  height: 100px;
+  width: 100px
+}
+
+.card {
+  padding: 100px;
+  margin: 5px;
+
+}
+
+/* .card-content {
+
+
+} */
+
+.question_text_div {
+  padding: 15px;
+  margin: 5px;
+
+}
+
+.answers_div {
+  padding: 15px;
+  margin-left: 15px;
+
+}
