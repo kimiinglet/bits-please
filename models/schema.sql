@@ -7,28 +7,37 @@ USE game_db;
 -- User related tables
 CREATE TABLE highscores
 (
-    id INT NOT NULL
-    AUTO_INCREMENT,
-    name VARCHAR
-    (20) NOT NULL,
-    -- UserId as foreignkey
-    score INT NOT NULL,
-    PRIMARY KEY
-    (id)
+id INT NOT NULL
+AUTO_INCREMENT,
+name VARCHAR
+(20) NOT NULL,
+-- UserId as foreignkey
+score INT NOT NULL,
+PRIMARY KEY
+(id)
 );
 
 
-    CREATE TABLE users
-    (
-        id INT NOT NULL
-        AUTO_INCREMENT,
-    name VARCHAR
-        (20) NOT NULL,
-    -- highest_score INT NULL,
-    PRIMARY KEY
-        (id)
+CREATE TABLE users
+(
+id INT NOT NULL
+AUTO_INCREMENT,
+name VARCHAR
+(20) NOT NULL,
+password VARCHAR (100),
+PRIMARY KEY
+(id)
 );
 
+
+-- Question related tables
+CREATE TABLE topics
+(
+id INT NOT NULL
+AUTO_INCREMENT PRIMARY KEY, 
+topic_name VARCHAR
+(40) NOT NULL
+);
 
         -- Question related tables
         CREATE TABLE topics

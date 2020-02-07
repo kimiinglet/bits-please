@@ -1,6 +1,5 @@
 * {
-  position: relative;
-  background-color: cadetblue;
+  font-family: 'Oxygen', sans-serif;
 }
 
 #userName {
@@ -8,20 +7,34 @@
 
 }
 
+body {
+  height: 100%;
+  background-size: cover;
+  width: 100%;
+
+}
+
+
+#letter {
+  font-size: 40px;
+}
 /* =========================
 quiz Html
 ========================== */
 
-#container {
+
+/* #container {
   position: absolute;
   left: 0;
   width: 80%;
-}
+} */
+
 
 /* ==========================
 accept the changes below, xo mags, 
 they affect quizhtml only 
 ===================*/
+
 
 .navbar {
   width: auto;
@@ -55,5 +68,6 @@ they affect quizhtml only
 .answers_div {
   padding: 15px;
   margin-left: 15px;
+>>>>>>> master
 
 }
