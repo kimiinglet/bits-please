@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>Home Page</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <link href="stylesheets/style.css" rel="stylesheet">
+<head> 
+    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <div class="container">
-    <header style="text-align: center;">Home Page</header>
-    <img src="https://avatars.dicebear.com/v2/bottts/${currentuser}.svg" alt="avatar" style="width: 50px;">
-    <hr>
-    <br>
-    <!-- input username and go to quiz -->
-    <form id="inputBtn">
-      <input type="text" name="" id="search">
-      <button type="submit" id="searchB">Submit</button>
-    </form>
-  </div>
+<body id="bgImage" class="container mx-auto bg-repeat" style="background-image:url(https://cdn6.dissolve.com/p/D2115_140_298/D2115_140_298_1200.jpg)">
+        
+    <!-- nav bar -->
+        <div class="bg-gray-300 inset-x-0 top-0 relative w-full" id="navBar"r>
+          <h1>Home Page</h1>
+            <div class= "avitar">
+                <img class="w-12" src="https://avatars.dicebear.com/v2/bottts/${currentuser}.svg" alt="avatar">
+            </div>
+        </div>
+  
+        <!-- individual letters name of page -->
+        <div class="flex flex-row" id="letters">
+          <div class="mx-auto flex-grow text-white text-center bg-transparent px-4 py-2 m-2 text-6xl">B</div>
+          <div class="mx-auto flex-grow text-white text-center bg-transparent px-4 py-2 m-2 text-6xl">I</div>
+          <div class="mx-auto flex-grow text-white text-center bg-transparent px-4 py-2 m-2 text-6xl">T</div>
+        </div>
+        <div class="flex flex-row">
+          <div class="mx-auto flex-grow text-white text-center bg-transparent px-4 py-2 m-2 text-6xl">P</div>
+          <div class="mx-auto flex-grow text-white text-center bg-transparent px-4 py-2 m-2 text-6xl">L</div>
+          <div class="mx-auto flex-grow text-white text-center bg-transparent px-4 py-2 m-2 text-6xl">E</div>
+          <div class="mx-auto flex-grow text-white text-center bg-transparent px-4 py-2 m-2 text-6xl">A</div>
+          <div class="mx-auto flex-grow text-white text-center bg-transparent px-4 py-2 m-2 text-6xl">S</div>
+          <div class="mx-auto flex-grow text-white text-center bg-transparent px-4 py-2 m-2 text-6xl">E</div>
+        </div>
+
+  
+        <!-- input username -->
+        <form id="inputBtn">
+          <input class="bg-gray-200 hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:shadow-outline focus:border-gray-300">
+          <button class="bg-gray-600 hover:bg-black hover:text-white focus:outline-none focus:shadow-outline text-black px-3 m-2 rounded ">
+            Sign Up
+          </button>
+        </form>   
+    
+
+        <!-- start quiz Btn -->
+        <div class="m-2">
+            <a href="highschore.html" class="inline-block px-3 py-1 shadow-lg bg-gray-500 hover:bg-black text-white uppercase font-sans text-align-right"><button>start quiz</button></a>
+        </div>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/login.js"></script>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+  
 </body>
-
 </html>
