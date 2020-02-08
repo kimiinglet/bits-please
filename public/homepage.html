@@ -11,18 +11,21 @@
 </head>
 
 <!-- background -->
-<body id="bgImage" class="container mx-auto bg-repeat" style="background-image:url(https://cdn6.dissolve.com/p/D2115_140_298/D2115_140_298_1200.jpg)">
+<body>
         
 
     <!-- nav bar -->
-    <ul class="flex justify-between m-2">
+    <ul class="flex justify-between m-2 bg-transparent">
+      <li>
+        <img class="w-12 inline-block" src="https://avatars.dicebear.com/v2/bottts/${currentuser}.svg" alt="avatar">
+
+        <a class="inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white text-bold uppercase">Username</a>
+        </li>
       <li class="mr-3">
-        <img class="w-12" src="https://avatars.dicebear.com/v2/bottts/${currentuser}.svg" alt="avatar"></li>
-      <li class="mr-3">
-        <a class="inline-block border border-gray-500 rounded py-2 px-4 bg-gray-700 hover:bg-blue-700 text-brown" href="#">Home page</a>
+        <a class="inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white text-bold uppercase" href="#">Home page</a>
       </li>
       <li class="mr-3">
-        <a class="inline-block py-2 px-4 text-gray-400 cursor-not-allowed" href="#">High Scores</a>
+        <a class="inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white uppercase" href="highscore.html">High Scores</a>
       </li>
     </ul>
 
@@ -71,25 +74,18 @@
 
             <!--  -->
             <div class="items-center justify-between">
-              <button id="signBtn" class="hover:bg-black hover:text-white focus:outline-none focus:shadow-outline h-10 text-white px-5 m-2 rounded ">
+              <button id="signBtn" type="submit" class="hover:bg-black hover:text-white focus:outline-none focus:shadow-outline h-10 text-white px-5 m-2 rounded ">
                 Sign Up
-              </button>
-\            </div>
+              </button> 
+            </div>
           </form>
           </div>
-
-    
-
-        <!-- start quiz Btn -->
-        <button id="signBtn" class="hover:bg-black hover:text-white focus:outline-none focus:shadow-outline h-10 text-white px-5 m-2 rounded uppercase">
-          Start quiz
-        </button>
 
 
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
   
 </body>
 </html>

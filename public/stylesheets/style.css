@@ -8,12 +8,13 @@
 }
 
 body {
-  height: 100%;
-  background-size: cover;
-  width: 100%;
-
+  background-color: cadetblue;
 }
 
+#css {
+  height: auto;
+  width: 300px;
+}
 
 #bits {
   font-size: 80px;
