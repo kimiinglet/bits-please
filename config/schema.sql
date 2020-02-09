@@ -36,53 +36,44 @@ PRIMARY KEY
         (
             id INT NOT NULL
             AUTO_INCREMENT PRIMARY KEY, 
-topic_name VARCHAR
+  topic_name VARCHAR
             (40) NOT NULL
 );
 
-            -- Question related tables
-            CREATE TABLE topics
+            CREATE TABLE quizzes
             (
                 id INT NOT NULL
                 AUTO_INCREMENT PRIMARY KEY, 
-  topic_name VARCHAR
-                (40) NOT NULL
+quiz_code VARCHAR
+                (100) NOT NULL,
+topic_id INT NULL,
+FOREIGN KEY
+                (topic_id) REFERENCES topics
+                (id)
 );
 
-                CREATE TABLE quizzes
+                CREATE TABLE quiz_content
                 (
                     id INT NOT NULL
                     AUTO_INCREMENT PRIMARY KEY, 
+topic_id INT NULL,
 quiz_code VARCHAR
                     (100) NOT NULL,
-topic_id INT NULL,
+question_text VARCHAR
+                    (500) NOT NULL,
+option1 VARCHAR
+                    (500) NOT NULL,
+option2 VARCHAR
+                    (500) NOT NULL,
+option3 VARCHAR
+                    (500) NOT NULL,
+option4 VARCHAR
+                    (500) NOT NULL,
+correct_option VARCHAR
+                    (15) NOT NULL,
 FOREIGN KEY
                     (topic_id) REFERENCES topics
                     (id)
-);
-
-                    CREATE TABLE quiz_content
-                    (
-                        id INT NOT NULL
-                        AUTO_INCREMENT PRIMARY KEY, 
-topic_id INT NULL,
-quiz_code VARCHAR
-                        (100) NOT NULL,
-question_text VARCHAR
-                        (500) NOT NULL,
-option1 VARCHAR
-                        (500) NOT NULL,
-option2 VARCHAR
-                        (500) NOT NULL,
-option3 VARCHAR
-                        (500) NOT NULL,
-option4 VARCHAR
-                        (500) NOT NULL,
-correct_option VARCHAR
-                        (15) NOT NULL,
-FOREIGN KEY
-                        (topic_id) REFERENCES topics
-                        (id)
 
 );
 

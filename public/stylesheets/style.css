@@ -1,81 +1,54 @@
 * {
-  font-family: 'Oxygen', sans-serif;
+  font-family: ‘Oxygen’, sans-serif;
 }
-
 #userName {
   width: 25%;
-
 }
-
 body {
-  height: 100%;
-  background-size: cover;
-  width: 100%;
-
+  background-color: cadetblue;
 }
-
 
 #bits {
   font-size: 80px;
 }
-
 #please {
   font-size: 80px;
 }
-
 #signBtn {
   background-image: url(../images/buttons.jpeg);
 }
 /* =========================
 quiz Html
 ========================== */
-
-
 /* #container {
   position: absolute;
   left: 0;
   width: 80%;
 } */
-
-
 /* ==========================
 accept the changes below, xo mags, 
 they affect quizhtml only 
 ===================*/
-
-
 .navbar {
   width: auto;
   height: 75px;
   float: left;
-
 }
-
 #avatar_img {
   height: 100px;
   width: 100px
 }
-
 .card {
   padding: 100px;
   margin: 5px;
-
 }
-
 /* .card-content {
-
-
 } */
-
 .question_text_div {
   padding: 15px;
   margin: 5px;
-
 }
-
 .answers_div {
   padding: 15px;
   margin-left: 15px;
->>>>>>> master
-
 }

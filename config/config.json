@@ -1,5 +1,10 @@
 {
   "development": {
+    "username": "root",
+    "password": null,
+    "database": "blogger",
+    "host": "127.0.0.1",
+    "port": 3306,
     "dialect": "mysql",
     "use_env_variable": "LOCALDB_URL"
   },
@@ -8,9 +13,15 @@
     "password": "Excusably-Widely-Salutary",
     "database": "database_test",
     "host": "127.0.0.1",
+    "port": 3306,
     "dialect": "mysql"
   },
   "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "port": 3306,
     "dialect": "mysql",
     "use_env_variable": "JAWSDB_URL"
   }

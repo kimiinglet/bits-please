@@ -2,73 +2,71 @@
 <html lang="en">
 
 <head>
-  <title>Quiz Time</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link href="stylesheets/style.css" rel="stylesheet">
-
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </head>
 
-<body>
+<!-- background -->
+
+<body id="bgImage" class="container mx-auto bg-repeat"
+  style="background-image:url(https://cdn6.dissolve.com/p/D2115_140_298/D2115_140_298_1200.jpg)">
 
 
-  <!-- -------------------------------------------------
-  accept all the changes on this page
-  it's html endpoints to support rendering questions and answers
-  tags/classes/ids are referenced in css and rendering qs+as
-  ---------------------------------------------------------->
 
-  <nav class="navbar" role="navigation" aria-label="dropdown navigation">
-    <!-- avatar_placeholder.png -->
-    <div class="navbar-item has-dropdown is-hoverable">
-      <a class="navbar-link">
-        Navigation Menu
-      </a>
+  <!-- bits -->
+  <div class="flex flex-row" id="bits">
+    <div class="mx-auto flex-grow text-white text-center bg-transparent m-2">B</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent m-2">I</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent m-2">T</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent m-2">S</div>
+  </div>
 
-      <hr class="navbar-divider">
-      <div class="navbar-dropdown">
-        <a class="navbar-item">
-          Homepage
-        </a>
-        <hr class="navbar-divider">
-        <a class="navbar-item">
-          Profile
-        </a>
-        <hr class="navbar-divider">
-        <a class="navbar-item">
-          Highscores
-        </a>
-        <hr class="navbar-divider">
+  <!-- please -->
+  <div class="flex flex-row" id="please">
+    <div class="mx-auto flex-grow text-white text-center bg-transparent px-4">P</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent px-4">L</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent px-4">E</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent px-4">A</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent px-4">S</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent px-4">E</div>
+  </div>
 
-      </div>
-    </div>
-  </nav>
 
-  <div class="account_hero">
-    <section class="hero is-small is-primary is-bold">
-      <div class="hero-body">
-        <div class="hero_container">
-          <img src="./images/avatar_placeholder.png" id="avatar_img" width="50" height="50px" alt="avatar">
-          <h1 class="account_hero_name">
-            Welcome: 
-          </h1>
-          <h2 class="account_hero_subtitle">
-            Subtitle
-          </h2>
+  <div class="container" id="user-banner">
+    <div class="jumbotron">
+      <h1>Welcome to Bits Please.</h1>
+      <h3>Username</h3>
+      <img src="/public/images/avatar_placeholder.png">
+      <hr>
+      <a href="/public/highscore.html" class="button" id="view-profile">View User Profile</a>
+      <a href="/public/homepage.html" class="button" id="view-main">View Main Menu</a>
+    </div> <!-- // end jumbrotron div-->
+  </div> <!-- /// end user-banner container div -->
+  <br><br><br>
 
-        </div>
-      </div>
-    </section>
-  </div> <!-- // end acct_hero div-->
-
-  <br><br>
-
-  <container id="quiz_container">
+  <div class="container" id="main-container">
 
     <div class="card">
       <header class="card-header">
         <p class="card-header-title">
           JavaScript Level One - Select the Best Answer
+          <!-- dynamically generate the above in next version by quiz selected -->
         </p>
 
       </header>
@@ -111,19 +109,19 @@
           <a href="#" class="card-footer-item" id="card-footer-submit">Submit</a>
           <a href="#" class="card-footer-item" id="card-footer-hint">Hint</a>
           <!-- Hint modal - give 1 that is wrong. pick randomly using math.random.math.floor, index of possible answers with correct identifier of "false" -->
-          <a href="#" class="card-footer-item" id="card-footer-main">Back to Main Menu</a>
+          <a href="#" class="card-footer-item" id="card-footer-main">Restart Quiz</a>
           <!-- Answer modal - give the text of the answer id with the 'correct' value of wrong -->
         </footer>
       </div> <!-- end card-content div-->
     </div> <!-- // end card div -->
 
+    <div class="quiz-card-container">
+
+    </div> <!-- /// end quiz-card-container div-->
 
 
+  </div> <!-- /// end main container div-->
 
-
-
-
-  </container> <!-- quiz-container-->
 
 
 
@@ -133,6 +131,8 @@
   <script type="text/javascript" src="js/login.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/quiz.js"></script>
 
 
 </body>
