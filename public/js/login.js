@@ -1,17 +1,18 @@
 $(document).ready(function () {
+  var loginForm = $("form.signup")
   // Getting references to our form and inputs
-  var loginForm = $("form.login")
-  var usernameInput = $("input#username-input")
-  // var emailInput = $("input#email-input");
-  // var passwordInput = $("input#password-input");
+  // var loginForm = $("form.login")
+  // var usernameInput = $("input#username-input")
+  var emailInput = $("input#email-input");
+  var passwordInput = $("input#password-input");
 
   // When the form is submitted, we validate there's an email and password entered
   loginForm.on("submit", function (event) {
     event.preventDefault()
     var userData = {
-      username: usernameInput.val().trim()
-      // email: emailInput.val().trim(),
-      // password: passwordInput.val().trim()
+      // username: emailInput.val().trim()
+      email: emailInput.val().trim(),
+      password: passwordInput.val().trim()
     }
 
     if (!userData.username) {
@@ -22,7 +23,7 @@ $(document).ready(function () {
     // If we have an email and password we run the loginUser function and clear the form
     loginUser(!userData.username)
     // (userData.email, userData.password)
-    usernameInput.val("")
+    emailInput.val("")
     // emailInput.val("");
     // passwordInput.val("");
   })
