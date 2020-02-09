@@ -1,4 +1,34 @@
 
+INSERT INTO users
+  (email, password)
+VALUES
+  ("user1@email.com", "pw123"),
+  ("user2@email.com", "pw123"),
+  ("user3@email.com", "pw123"),
+  ("user4@email.com", "pw123")
+
+
+SELECT *
+FROM users;
+
+
+
+INSERT INTO scores
+  (score, quiz_id, user_id)
+VALUES
+  ("9", 1, 2),
+  ("8", 2, 2),
+  ("10", 2, 2),
+  ("8", 1, 3),
+  ("8", 1, 3)
+
+
+SELECT *
+FROM users;
+
+
+
+
 INSERT INTO topics
   (topic_name)
 VALUES

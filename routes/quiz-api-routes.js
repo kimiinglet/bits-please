@@ -1,0 +1,11 @@
+/////////////////////////////////////////////////////////////////////////
+// routes for displaying data to the db (GET POT DELETE PUT)
+// QUIZ-api-routes.js
+    // topics
+    // quizzes q+a
+// USER-api-routes.js
+    // username/email
+    // password
+    // scores history/scores history id
+    // avatar
+////////////////////////////////////////////////////////////////////////

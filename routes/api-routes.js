@@ -1,3 +1,13 @@
+
+
+/////////////////////////////////////////////////////////////
+// as of now
+// delete this file
+// split api-routes into user and quiz
+// we can disregard this plan if it isn't easiest
+/////////////////////////////////////////////////////////////
+
+
 // Requiring our models and passport as we've configured it
 var db = require("../models")
 var passport = require("../config/passport")
@@ -50,7 +60,7 @@ module.exports = function (app) {
 
     console.log("User Data:")
     console.log(req.body)
-  
+
     db.User.create({
       name: req.body.name,
       created_at: req.body.created_at
@@ -59,7 +69,7 @@ module.exports = function (app) {
       console.log(results);
       res.end()
     })
-  
+
   })
 }
 
