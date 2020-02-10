@@ -4,7 +4,7 @@
 
 
 <head>
-    <title>Pick your game
+    <title>Pick yourquiz
     </title>
     <meta charset=“UTF-8">
     <meta name=“viewport” content=“width=device-width, initial-scale=1">
@@ -12,41 +12,61 @@
     <link href=“https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css” rel=“stylesheet”>
     <link href="stylesheets/style.css" rel="stylesheet">
 </head>
-<!-- background -->
 
 <body>
 
 
+    <div class="container" id="user-banner">
+        <div class="jumbotron">
+            <h2>Welcome to Bits Please.</h2>
+            <!-- <h3>Username</h3> -->
+            <img src="../public/images/avatar_placeholder.png">
+            <hr>
+            <a href="/public/icebox/ice-profile.html" class="button" id="view-profile">View User Profile</a>
+            <a href="/public/main-menu.html" class="button" id="view-main">View Main Menu</a>
+        </div> <!-- // end jumbrotron div-->
+    </div> <!-- /// end user-banner container div -->
+    <br><br><br>
 
-        <!-- javascript game -->
-        <div class=“jsQuiz”>
-            <img src="../public/images/jslogo.png" alt="javascript quiz">
-                <p>Do you think you know?</p>
-                <button id="startJsBtn">Start Java</button>
-        </div>
+    <!-- javascript game -->
+    <br>
+    <div class=“jsQuiz”>
+        <img src="../public/images/jslogo.png" alt="javascript quiz">
+        <p>Do you know if you know JavaScript?</p>
+        <br>
+        <a href="./icebox/js-quiz.html" class="btn btn-default btn-quiz">Start JavaScript Quiz!</a>
+    </div>
+    <br><br>
 
-        <!-- CSS game -->
-        <div class=“cssQuiz”>
-            <img src="../public/images/jslogo.png" alt="css quiz">
-                <p>Do you think you know?</p>
-                <button id="startCssBtn">Start Css</button>
-        </div>
+    <!-- nodejs game -->
+    <br>
+    <div class=“nodeQuiz”>
+        <img src="../public/images/nodejslogo.png" alt="node quiz">
+        <p>Do you know if you know Node JS?</p>
+        <br>
+        <a href="./icebox/nodejs.html" class="btn btn-default btn-quiz">Start NodeJS Quiz!</a>
+    </div>
+    <br><br>
 
-        <!-- html game -->
-        <div class=“htmlQuiz”>
-            <img src="../public/images/jslogo.png" alt="html quiz">
-            <p>Do you think you know?</p>
-            <button id="startHtmlBtn">Start Html</button>
-        </div>
+    <!-- CSS game -->
+    <br>
+    <div class=“cssQuiz”>
+        <img src="../public/images/csslogo.png" alt="css quiz">
+        <p>Do you know if you know CSS?</p>
+        <br>
+        <a href="./icebox/css-quiz.html" class="btn btn-default btn-quiz">Start CSS Quiz!</a>
+    </div>
+    <br><br>
 
-        <!-- nodejs game -->
-        <div class=“nodeQuiz”>
-            <img src="../public/images/jslogo.png" alt="node quiz">
-                <p>Do you think you know?</p>
-                <button id="startNodeBtn">Start Node</button>
-        </div> -->
-
-       
+    <!-- html game -->
+    <br>
+    <div class=“htmlQuiz”>
+        <img src="../public/images/hmllogo.png" alt="html quiz">
+        <p>Do you know if you know HTML?</p>
+        <br>
+        <a href="./icebox/html-quiz.html" class="btn btn-default btn-quiz">Start HTML Quiz!</a>
+    </div>
+    <br><br>
 
     </div>
 
