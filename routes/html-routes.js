@@ -26,7 +26,7 @@ module.exports = function (app) {
   //Highscores page
   // Here we've added our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the homepage
-  app.get("/", function (req, res) {
+  app.get("/highscore", function (req, res) {
     if (req.user){
       res.redirect("/")
     }
