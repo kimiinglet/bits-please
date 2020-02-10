@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang=“en”>
 
-<!-- 
-/////////////////////////////////////////////////////////////////////////
-// look at thai bang! home.html
-////////////////////////////////////////////////////////////////////////
- -->
 
 
 <head>
@@ -20,64 +15,52 @@
 <!-- background -->
 
 <body>
-    <!-- nav bar -->
-    <ul class=“flex justify-between m-2 bg-transparent”>
-        <li>
-            <img class=“w-12 inline-block” src="../public/images/avatar_placeholder.png" alt=“avatar”>
-            <br>
-            <a class=“inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white text-bold
-                uppercase”>Username</a>
-        </li>
-        <li class=“mr-3">
-            <a class=“inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white text-bold uppercase”
-                href=“#”>Home page</a>
-        </li>
-        <li class=“mr-3”>
-            <a class=“inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white uppercase”
-                href=“highscore.html”>High Scores</a>
-        </li>
-    </ul>
-    <div class=“flex content-center m-2 p-3">
+
+   
+    nav bar -->
 
         <!-- javascript game -->
-        <div class=“max-w-sm rounded overflow-hidden shadow-lg bg-gray-300 float-left”>
-            <img class=“w-ful” src="../public/images/jslogo.png" alt=“javascript quiz”>
-            <div class=“px-6 py-4”>
-                <div class=“font-bold text-xl mb-2">Do you think you know?</div>
-                <button id=“startbtn” class=“flex content-center hover:bg-black hover:text-white bg-gray-700
-                    focus:outline-none focus:shadow-outline h-10 text-white px-5 m-2 rounded “>
-                    Start Game
-                </button>
-            </div>
+        <div class=“jsQuiz”>
+            <img src="../public/images/jslogo.png" alt="javascript quiz">
+                <p>Do you think you know?</p>
+                <button id="startJsBtn">Start Java</button>
         </div>
 
-        <!-- css game -->
-        <div class=“max-w-sm rounded overflow-hidden shadow-lg bg-gray-300 float-right”>
-            <img class=“w-full” id=“css” src="../public/images/hmllogo.png" alt=“html quiz”>
-            <div class=“px-6 py-4">
-                <div class=“font-bold text-xl mb-2”>Do you think you know?</div>
-                <button id=“startbtn” class=“flex content-center hover:bg-black hover:text-white bg-gray-700
-                    focus:outline-none focus:shadow-outline h-10 text-white px-5 m-2 rounded “>
-                    Start game
-                </button>
-            </div>
+        <!-- CSS game -->
+        <div class=“cssQuiz”>
+            <img src="../public/images/jslogo.png" alt="css quiz">
+                <p>Do you think you know?</p>
+                <button id="startJsBtn">Start Java</button>
         </div>
 
         <!-- html game -->
-        <div class=“max-w-sm rounded overflow-hidden shadow-lg bg-gray-300 float-right”>
-            <img class=“w-full” id=“css” src="../public/images/csslogo.png" alt=“css quiz”>
-            <div class=“px-6 py-4">
-                <div class=“font-bold text-xl mb-2”>Do you think you know?</div>
-                <button id=“startbtn” class=“flex content-center hover:bg-black hover:text-white bg-gray-700
-                    focus:outline-none focus:shadow-outline h-10 text-white px-5 m-2 rounded “>
-                    Start game
-                </button>
-            </div>
+        <div class=“htmlQuiz”>
+            <img src="../public/images/jslogo.png" alt="html quiz">
+            <p>Do you think you know?</p>
+            <button id="startJsBtn">Start Java</button>
         </div>
 
         <!-- nodejs game -->
-        <div class=“max-w-sm rounded overflow-hidden shadow-lg bg-gray-300 float-right”>
-            <img class=“w-full” id=“css” src="../public/images/nodejslogo.png" alt=“nodejs quiz”>
+        <div class=“nodeQuiz”>
+            <img src="../public/images/jslogo.png" alt="node quiz">
+                <p>Do you think you know?</p>
+                <button id="startJsBtn">Start Java</button>
+        </div> -->
+
+        <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-300 float-right">
+            <img class=“w-full” id=“css” src="../public/images/csslogo.png" alt="css quiz">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Do you think you know?</div>
+                <button id=“startbtn” class="flex content-center hover:bg-black hover:text-white bg-gray-700
+                    focus:outline-none focus:shadow-outline h-10 text-white px-5 m-2 rounded">
+                    Start game
+                </button>
+            </div>
+        </div> -->
+
+        
+        <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-300 float-right">
+            <img class=“w-full id="css" src="../public/images/nodejslogo.png" alt="nodejs quiz">
             <div class=“px-6 py-4">
                 <div class=“font-bold text-xl mb-2”>Do you think you know?</div>
                 <button id=“startbtn” class=“flex content-center hover:bg-black hover:text-white bg-gray-700
@@ -85,7 +68,7 @@
                     Start game
                 </button>
             </div>
-        </div>
+        </div> -->
 
     </div>
 
