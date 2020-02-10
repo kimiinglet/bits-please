@@ -1,6 +1,6 @@
-/* global moment */
+// /* global moment */
 
-// When user clicks add-btn
+// // When user clicks add-btn
 // $("#user-submit").on("click", function (event) {
 //     event.preventDefault()
 
