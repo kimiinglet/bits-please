@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NODE JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <link href="stylesheets/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="container" id="user-banner">
+        <div class="jumbotron">
+            <h1>Welcome to Bits Please.</h1>
+            <!-- <img src="../public/images/avatar_placeholder.png"> -->
+            <hr>
+            <a href="/public/icebox/ice-profile.html" class="button" id="view-profile">View User Profile</a>
+            <a href="/public/main-menu.html" class="button" id="view-main">View Main Menu</a>
+        </div> <!-- // end jumbrotron div-->
+    </div> <!-- /// end user-banner container div -->
+    <br><br><br>
+
+
+
+
+    <div class="quiz_slide" id=js_quiz">
+        <h2>node JS Level 1</h2>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+
+
+
+                <div class="carousel-item active">
+                    <div>
+                        <!--  -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="quizBox">
+
+                                        <fieldset>
+                                            <div class="question_text_div">
+                                                <span>"How do you install packages for the relevent dependencies listed
+                                                    in the package.json?"</span>
+                                            </div>
+                                            <br>
+                                            <div class="answers_div">
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="option1" name="js"
+                                                        value="1answer">
+                                                    <label for="option1">'node install'</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="option2" name="js"
+                                                        value="2answer">
+                                                    <label for="option2">'npx'</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="music" name="js"
+                                                        value="3answer">
+                                                    <label for="option3">'npm install'</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="music" name="js"
+                                                        value="4answer">
+                                                    <label for="option4">'npm'</label>
+                                                </div>
+                                            </div> <!-- // end answers div-->
+                                        </fieldset>
+                                    </div> <!-- // end quizbox div -->
+                                </div> <!-- content div -->
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item" id="card-footer-submit">Submit</a>
+                                    <a href="#" class="card-footer-item" id="card-footer-main">Restart Quiz</a>
+                                    <!-- Answer modal - give the text of the answer id with the 'correct' value of wrong -->
+                                </footer>
+                            </div> <!-- end card-content div-->
+                        </div> <!-- // end card div -->
+                    </div>
+                </div><!-- </div> carousel item -->
+
+
+
+                <div class="carousel-item">
+                    <div>
+                        <!--  -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="quizBox">
+
+                                        <fieldset>
+                                            <div class="question_text_div">
+                                                <span>"How do you create a package.json?"</span>
+                                            </div>
+                                            <br>
+                                            <div class="answers_div">
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="option1" name="js"
+                                                        value="1answer">
+                                                    <label for="option1">'npm'</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="option2" name="js"
+                                                        value="2answer">
+                                                    <label for="option2">'npm init -y'</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="music" name="js"
+                                                        value="3answer">
+                                                    <label for="option3">'npm json'</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="music" name="js"
+                                                        value="4answer">
+                                                    <label for="option4">'npm package-lock'</label>
+                                                </div>
+                                            </div> <!-- // end answers div-->
+                                        </fieldset>
+                                    </div> <!-- // end quizbox div -->
+                                </div> <!-- content div -->
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item" id="card-footer-submit">Submit</a>
+                                    <a href="#" class="card-footer-item" id="card-footer-main">Restart Quiz</a>
+                                    <!-- Answer modal - give the text of the answer id with the 'correct' value of wrong -->
+                                </footer>
+                            </div> <!-- end card-content div-->
+                        </div> <!-- // end card div -->
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-item">
+                    <div>
+                        <!--  -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="quizBox">
+
+                                        <fieldset>
+                                            <div class="question_text_div">
+                                                <span>What node package can you use to ask the user questions and record
+                                                    ther answers?</span>
+                                            </div>
+                                            <br>
+                                            <div class="answers_div">
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="option1" name="js"
+                                                        value="1answer">
+                                                    <label for="option1">"fs"</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="option2" name="js"
+                                                        value="2answer">
+                                                    <label for="option2">"path"</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="music" name="js"
+                                                        value="3answer">
+                                                    <label for="option3">"inquirer"</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="music" name="js"
+                                                        value="4answer">
+                                                    <label for="option4">"mysql"</label>
+                                                </div>
+                                            </div> <!-- // end answers div-->
+                                        </fieldset>
+                                    </div> <!-- // end quizbox div -->
+                                </div> <!-- content div -->
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item" id="card-footer-submit">Submit</a>
+                                    <a href="#" class="card-footer-item" id="card-footer-main">Restart Quiz</a>
+                                    <!-- Answer modal - give the text of the answer id with the 'correct' value of wrong -->
+                                </footer>
+                            </div> <!-- end card-content div-->
+                        </div> <!-- // end card div -->
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-item">
+                    <div>
+                        <!--  -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="quizBox">
+
+                                        <fieldset>
+                                            <div class="question_text_div">
+                                                <span>"True/False is a __ data type."</span>
+                                            </div>
+                                            <br>
+                                            <div class="answers_div">
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="option1" name="js"
+                                                        value="1answer">
+                                                    <label for="option1">string</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="option2" name="js"
+                                                        value="2answer">
+                                                    <label for="option2">boolean</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="music" name="js"
+                                                        value="3answer">
+                                                    <label for="option3">null</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="music" name="js"
+                                                        value="4answer">
+                                                    <label for="option4">checkbox</label>
+                                                </div>
+                                            </div> <!-- // end answers div-->
+                                        </fieldset>
+                                    </div> <!-- // end quizbox div -->
+                                </div> <!-- content div -->
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item" id="card-footer-submit">Submit</a>
+                                    <a href="#" class="card-footer-item" id="card-footer-main">Restart Quiz</a>
+                                    <!-- Answer modal - give the text of the answer id with the 'correct' value of wrong -->
+                                </footer>
+                            </div> <!-- end card-content div-->
+                        </div> <!-- // end card div -->
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div>
+                        <!--  -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="quizBox">
+
+                                        <fieldset>
+                                            <div class="question_text_div">
+                                                <span>How do you uninstall node modules?</span>
+                                            </div>
+                                            <br>
+                                            <div class="answers_div">
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="option1" name="js"
+                                                        value="1answer">
+                                                    <label for="option1">git uninstall < module></label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="option2" name="js"
+                                                        value="2answer">
+                                                    <label for="option2">git u < module></label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="music" name="js"
+                                                        value="3answer">
+                                                    <label for="option3">node u < module></label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" class="answer_text" id="music" name="js"
+                                                        value="4answer">
+                                                    <label for="option4">node uninstall < module>
+                                                            </module></label>
+                                                </div>
+                                            </div> <!-- // end answers div-->
+                                        </fieldset>
+                                    </div> <!-- // end quizbox div -->
+                                </div> <!-- content div -->
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item" id="card-footer-submit">Submit</a>
+                                    <a href="#" class="card-footer-item" id="card-footer-main">Restart Quiz</a>
+                                    <!-- Answer modal - give the text of the answer id with the 'correct' value of wrong -->
+                                </footer>
+                            </div> <!-- end card-content div-->
+                        </div> <!-- // end card div -->
+                    </div>
+                </div>
+
+
+
+
+                <!-- <div class="carousel-item">
+          <img class="d-block w-100" src="..." alt="Third slide">
+        </div> -->
+
+                <!-- <div class="carousel-item">
+          <img class="d-block w-100" src="..." alt="Third slide">
+        </div> -->
+
+            </div> <!-- /// carousel-inner -->
+
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+
+
+
+    </div> <!-- ////end quiz_slide div-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/members.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/quiz.js"></script>
+
+
+</body>
+
+</html>
