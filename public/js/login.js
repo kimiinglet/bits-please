@@ -31,10 +31,10 @@ $(document).ready(function () {
   function loginUser(username) {
     //(email, password)
     $.post("/api/login", {
-        username: username
-        // email: email,
-        // password: password
-      })
+      username: username
+      // email: email,
+      // password: password
+    })
       .then(function () {
         window.location.replace("/members")
         // If there's an error, log the error
@@ -44,3 +44,16 @@ $(document).ready(function () {
       })
   }
 })
+
+//Check to see if username or password forms were left blank when submitted
+function checkForBlank() {
+
+  if (document.getElementById("input").value == "") {
+    alert("Username cannot be left blank");
+    return false;
+  } else if (document.getElementById("password").value == "") {
+    alert("Password cannot be left blank");
+    return false;
+  }
+  return true;
+}
