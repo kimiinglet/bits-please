@@ -23,16 +23,6 @@ module.exports = function (app) {
   })
 
 
-  //main-menu
-  // app.get("/", function (req, res) {
-  //   // If the user already has an account send them to the homepage
-  //   if (req.user) {
-  //     res.redirect("/")
-  //   }
-  //   res.sendFile(path.join(__dirname, "../public/main-menu.html"))
-  //   console.log("BAM")
-  // })
-
   //Quiz page
   app.get("/quiz", function (req, res) {
     // 
@@ -55,6 +45,17 @@ module.exports = function (app) {
   app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/404.html"))
   })
+
+    //main-menu
+  // app.get("/", function (req, res) {
+  //   // If the user already has an account send them to the homepage
+  //   if (req.user) {
+  //     res.redirect("/")
+  //   }
+  //   res.sendFile(path.join(__dirname, "../public/main-menu.html"))
+  //   console.log("BAM")
+  // })
+
 }
 
 
