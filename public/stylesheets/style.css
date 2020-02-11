@@ -1,3 +1,4 @@
+
 * {
   font-family: ‘Oxygen’, sans-serif;
 }
@@ -8,29 +9,37 @@ body {
   background-color: cadetblue;
 }
 
-#bits {
-  font-size: 80px;
-}
-#please {
-  font-size: 80px;
-}
-#signBtn {
-  background-image: url(../images/buttons.jpeg);
+h2 {
+  text-align:center
 }
 
+#bits {
+  font-size: 40px;
+}
+#please {
+  font-size: 40px;
+}
+#signBtn {
+background-color: white;}
+
 .navbar {
-  width: auto;
-  height: 75px;
+  width: 100%;
+  height: auto;
   float: left;
 }
+
 #avatar_img {
   height: 100px;
-  width: 100px
+  width: 100px;
 }
 .card {
-  padding: 100px;
   margin: 5px;
+  width:100%;
 }
+
+
+
+
 /* .card-content {
 } */
 .question_text_div {
@@ -76,3 +85,13 @@ body {
   padding: 10px;
   margin: 20px;
 } 
+
+h2{
+  color:white;
+}
+
+/* ======= */
+.jsQuiz {
+  margin: 5px;
+}
+

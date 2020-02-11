@@ -1,76 +1,81 @@
 <!DOCTYPE html>
-<html lang=“en”>
+<html lang="en">
 
 <head>
   <title>Home Page</title>
-  <meta charset=“UTF-8">
-  <meta name=“viewport” content=“width=device-width, initial-scale=1.0">
-  <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
-  <link href=“https://fonts.googleapis.com/css?family=Oxygen&display=swap” rel=“stylesheet”>
-  <link href=“https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css” rel=“stylesheet”>
+  <meta charset="UTF-8">
+  <meta name=“viewport" content=“width=device-width, initial-scale=1.0">
+  <meta http-equiv=“X-UA-Compatible" content=“ie=edge">
+  <link href=“https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel=“stylesheet">
+  <link href=“https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel=“stylesheet">
   <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 <!-- background -->
 
 <body>
   <!-- nav bar -->
-  <ul class=“flex justify-between m-2 bg-transparent”>
+  <div class="navBar">
+  <ul class="flex justify-between m-2 bg-transparent">
     <li>
-      <img class=“w-12 inline-block” src="../public/images/avatar_placeholder.png" alt=“avatar”>
+      <img class="w-12 inline-block" src="../public/images/avatar_placeholder.png" alt="avatar">
       <br>
-      <a class=“inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white text-bold uppercase”>Username</a>
+      <a class="inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white text-bold uppercase">Username</a>
     </li>
-    <li class=“mr-3">
-      <a class=“inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white text-bold uppercase” href=“#”>Home
+    <li class="mr-3">
+      <a class="inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white text-bold uppercase" href="#">Home
         page</a>
     </li>
-    <li class=“mr-3”>
-      <a class=“inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white uppercase” href=“profile.html”>Profile</a>
+    <li class="mr-3">
+      <a class="inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white uppercase" href="profile.html">Profile</a>
     </li>
   </ul>
   <!-- bits -->
-  <div class=“flex flex-row” id=“bits”>
-    <div class=“mx-auto flex-grow text-white text-center bg-transparent m-2">B</div>
-    <div class=“mx-auto flex-grow text-white text-center bg-transparent m-2”>I</div>
-    <div class=“mx-auto flex-grow text-white text-center bg-transparent m-2">T</div>
-    <div class=“mx-auto flex-grow text-white text-center bg-transparent m-2”>S</div>
+  <div class="flex flex-row" id="bits">
+    <div class="mx-auto flex-grow text-white text-center bg-transparent m-2">B</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent m-2">I</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent m-2">T</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent m-2">S</div>
   </div>
   <!-- please -->
-  <div class=“flex flex-row” id=“please”>
-    <div class=“mx-auto flex-grow text-white text-center bg-transparent px-4">P</div>
-    <div class=“mx-auto flex-grow text-white text-center bg-transparent px-4”>L</div>
-    <div class=“mx-auto flex-grow text-white text-center bg-transparent px-4">E</div>
-    <div class=“mx-auto flex-grow text-white text-center bg-transparent px-4”>A</div>
-    <div class=“mx-auto flex-grow text-white text-center bg-transparent px-4">S</div>
-    <div class=“mx-auto flex-grow text-white text-center bg-transparent px-4”>E</div>
+  <div class="flex flex-row" id="please">
+    <div class="mx-auto flex-grow text-white text-center bg-transparent px-4">P</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent px-4">L</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent px-4">E</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent px-4">A</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent px-4">S</div>
+    <div class="mx-auto flex-grow text-white text-center bg-transparent px-4">E</div>
   </div>
+</div>
+
+
+
   <!-- sign up form-->
-  <div class=“w-full max-w-xs mx-auto”>
-    <form id=“login” class=“bg-transparent shadow-lg rounded px-8 pt-6 pb-8 mb-4">
+  <div class="w-full max-w-xs mx-auto">
+    <form id="login" class="bg-transparent shadow-lg rounded px-8 pt-6 pb-8 mb-4">
       <!-- username / txt -->
-      <div class=“mb-4”>
-        <label class=“block text-white text-sm font-bold mb-2" for=“email”>
+      <div class="mb-4">
+        <label class="block text-white text-sm font-bold mb-2" for="email">
           email
         </label>
         <!-- Email background -->
-        <input id=“email-input” class=“shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
-          leading-tight focus:outline-none focus:shadow-outline bg-gray-400” id=“username” type=“text”
-          placeholder=“Username”>
+        <input id="email-input" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
+          leading-tight focus:outline-none focus:shadow-outline bg-gray-400" id="username" type="text"
+          placeholder="Username">
       </div>
       <!-- password -->
-      <div class=“mb-6”>
-        <label class=“block text-white text-sm font-bold mb-2" for=“password”>
+      <div class="mb-6">
+        <label class="block text-white text-sm font-bold mb-2" for="password">
           Password
         </label>
         <!-- password background -->
-        <input id="password-input"class=“shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight
-          focus:outline-none focus:shadow-outline bg-gray-400" id=“password” type=“password”
-          placeholder=“******************“>
+        <input id="password-input"class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight
+          focus:outline-none focus:shadow-outline bg-gray-400" id="password" type="password"
+          placeholder="******************">
       </div>
       <!--  -->
-      <div class=“items-center justify-between”>
-        <button id=“signBtn” class=“hover:bg-black hover:text-white focus:outline-none
-          focus:shadow-outline h-10 text-white px-5 m-2 rounded “>
+      <div class="items-center justify-between">
+        <button id="signBtn" class="hover:bg-black hover:text-white focus:outline-none
+          focus:shadow-outline h-10 text-white px-5 m-2 rounded ">
           Sign Up
         </button>
       </div>

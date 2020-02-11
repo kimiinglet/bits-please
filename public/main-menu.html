@@ -15,22 +15,26 @@
 
 <body>
 
+<!-- nav bar -->
 
-    <div class="container" id="user-banner">
-        <div class="jumbotron">
-            <h2>Welcome to Bits Please.</h2>
-            <!-- <h3>Username</h3> -->
-            <img src="../public/images/avatar_placeholder.png">
-            <hr>
-            <a href="/public/icebox/ice-profile.html" class="button" id="view-profile">View User Profile</a>
-            <a href="/public/main-menu.html" class="button" id="view-main">View Main Menu</a>
-        </div> <!-- // end jumbrotron div-->
-    </div> <!-- /// end user-banner container div -->
-    <br><br><br>
+    <ul class="flex justify-between m-2 bg-transparent">
+        <li>
+          <img class="w-12 inline-block" src="../public/images/avatar_placeholder.png" alt=“avatar”>
+          <br>
+          <a class="inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white text-bold uppercase"></a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white text-bold uppercase" href=“#”>Home
+            page</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white uppercase" href=“profile.html”>Profile</a>
+        </li>
+      </ul>
 
     <!-- javascript game -->
     <br>
-    <div class=“jsQuiz”>
+    <div class="jsQuiz">
         <img src="../public/images/jslogo.png" alt="javascript quiz">
         <p>Do you know if you know JavaScript?</p>
         <br>
@@ -40,7 +44,7 @@
 
     <!-- nodejs game -->
     <br>
-    <div class=“nodeQuiz”>
+    <div class="nodeQuiz">
         <img src="../public/images/nodejslogo.png" alt="node quiz">
         <p>Do you know if you know Node JS?</p>
         <br>
@@ -71,7 +75,7 @@
     </div>
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
