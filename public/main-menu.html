@@ -10,72 +10,66 @@
     <meta name=“viewport” content=“width=device-width, initial-scale=1">
     <link href=“https://fonts.googleapis.com/css?family=Oxygen&display=swap” rel=“stylesheet”>
     <link href=“https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css” rel=“stylesheet”>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <link href="stylesheets/style.css" rel="stylesheet">
+
 </head>
 
 <body>
+        <!-- nav bar -->
+        <div class="jumbotron">
+            <div class="div username">Username</div>
+            <img div="avatar_img" src="../public/images/avatar_placeholder.png">
+            <hr>
+            <a href="/public/profile.html" class="button" id="view-profile">View User Profile</a>
+            <a href="/public/main-menu.html" class="button" id="view-main">View Main Menu</a>
+            <a>
+        </div>
 
-<!-- nav bar -->
+        <!-- javascript game -->
+        <div class="container">
 
-    <ul class="flex justify-between m-2 bg-transparent">
-        <li>
-          <img class="w-12 inline-block" src="../public/images/avatar_placeholder.png" alt=“avatar”>
-          <br>
-          <a class="inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white text-bold uppercase"></a>
-        </li>
-        <li class="mr-3">
-          <a class="inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white text-bold uppercase" href=“#”>Home
-            page</a>
-        </li>
-        <li class="mr-3">
-          <a class="inline-block py-2 px-4 bg-transparent hover:bg-blue-700 text-white uppercase" href=“profile.html”>Profile</a>
-        </li>
-      </ul>
-
-    <!-- javascript game -->
-    <br>
-    <div class="jsQuiz">
-        <img src="../public/images/jslogo.png" alt="javascript quiz">
-        <p>Do you know if you know JavaScript?</p>
+        <div class="jsQuiz">
+            <img class="jsImage" src="../public/images/jslogo.png" alt="javascript quiz">
+            <p>Do you know if you know JavaScript?</p>
+            <br>
+            <a href="./icebox/js-quiz.html" class="btn btn-default btn-quiz">Start JavaScript Quiz!</a>
+        </div>
         <br>
-        <a href="./icebox/js-quiz.html" class="btn btn-default btn-quiz">Start JavaScript Quiz!</a>
-    </div>
-    <br><br>
 
-    <!-- nodejs game -->
-    <br>
-    <div class="nodeQuiz">
-        <img src="../public/images/nodejslogo.png" alt="node quiz">
-        <p>Do you know if you know Node JS?</p>
+        <!-- nodejs game -->
         <br>
-        <a href="./icebox/nodejs.html" class="btn btn-default btn-quiz">Start NodeJS Quiz!</a>
-    </div>
-    <br><br>
-
-    <!-- CSS game -->
-    <br>
-    <div class=“cssQuiz”>
-        <img src="../public/images/csslogo.png" alt="css quiz">
-        <p>Do you know if you know CSS?</p>
+        <div class="nodeQuiz">
+            <img class="nodeImage" src="../public/images/nodejslogo.png" alt="node quiz">
+            <p>Do you know if you know Node JS?</p>
+            <br>
+            <a href="./icebox/nodejs.html" class="btn btn-default btn-quiz">Start NodeJS Quiz!</a>
+        </div>
         <br>
-        <a href="./icebox/css-quiz.html" class="btn btn-default btn-quiz">Start CSS Quiz!</a>
-    </div>
-    <br><br>
 
-    <!-- html game -->
-    <br>
-    <div class=“htmlQuiz”>
-        <img src="../public/images/hmllogo.png" alt="html quiz">
-        <p>Do you know if you know HTML?</p>
+        <!-- CSS game -->
         <br>
-        <a href="./icebox/html-quiz.html" class="btn btn-default btn-quiz">Start HTML Quiz!</a>
+        <div class="cssQuiz">
+            <img class="cssImage" src="../public/images/csslogo.png" alt="css quiz">
+            <p>Do you know if you know CSS?</p>
+            <br>
+            <a href="./icebox/css-quiz.html" class="btn btn-default btn-quiz">Start CSS Quiz!</a>
+        </div>
+        <br>
+
+        <!-- html game -->
+        <br>
+        <div class="htmlQuiz">
+            <img class="htmlImage" src="../public/images/hmllogo.png" alt="html quiz">
+            <p>Do you know if you know HTML?</p>
+            <br>
+            <a href="./icebox/html-quiz.html" class="btn btn-default btn-quiz">Start HTML Quiz!</a>
+        </div>
+        <br>
     </div>
-    <br><br>
-
-    </div>
 
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
+
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
@@ -87,6 +81,6 @@
 
 
 
-</body>
+</div>
 
 </html>

@@ -81,6 +81,7 @@ background-color: white;}
   color: rgb(31, 39, 39);
   margin-left: 5px;
 }
+
 #carouselExampleIndicators {
   padding: 10px;
   margin: 20px;
@@ -92,6 +93,49 @@ h2{
 
 /* ======= */
 .jsQuiz {
-  margin: 5px;
+  width: 250px;
+  padding:10px;
+  background-color: gray;
+  text-align: center;}
+
+.jsImage {
+  width: 100%;
 }
 
+.nodeQuiz {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;}
+
+.nodeImage {
+  width: 100%;
+}
+
+.cssQuiz {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;}
+
+
+.cssImage {
+  width: 100%;
+}
+
+.htmlQuiz {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;}
+
+.htmlImage {
+  width: 100%;
+}
+
+
+/* Main-menu page */
+.container {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: cadetblue;
+}
