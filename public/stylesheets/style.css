@@ -17,18 +17,7 @@ body {
 #signBtn {
   background-image: url(../images/buttons.jpeg);
 }
-/* =========================
-quiz Html
-========================== */
-/* #container {
-  position: absolute;
-  left: 0;
-  width: 80%;
-} */
-/* ==========================
-accept the changes below, xo mags, 
-they affect quizhtml only 
-===================*/
+
 .navbar {
   width: auto;
   height: 75px;
@@ -52,3 +41,38 @@ they affect quizhtml only
   padding: 15px;
   margin-left: 15px;
 }
+
+.btn-quiz
+ {
+   background-color: rgb(130, 243, 243) ;
+   padding: 15px;
+   color: rgb(31, 39, 39);
+   margin-left: 5px;
+ }
+
+ .score-table-div {
+  margin: 0;
+  background: yellow;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  /* transform: translate(-50%, -50%)  */
+ }
+
+ #view-main-btn {
+  background-color: rgb(130, 243, 243) ;
+  padding: 15px;
+  color: rgb(31, 39, 39);
+  margin-left: 5px;
+}
+
+#view-profile-btn {
+  background-color: rgb(130, 243, 243) ;
+  padding: 15px;
+  color: rgb(31, 39, 39);
+  margin-left: 5px;
+}
+#carouselExampleIndicators {
+  padding: 10px;
+  margin: 20px;
+} 
