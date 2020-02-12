@@ -26,7 +26,7 @@ app.use(session({
 // app.use(passport.session())
 
 // Requiring our routes
-require("./routes/html-routes.js")(app)
+require(".compressed-html-routes")(app)
 // require("./routes/quiz-api-routes.js")(app)
 // require("./routes/user-api-routes.js")(app)
 
